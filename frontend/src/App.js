@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ButterToast, { POS_CENTER , POS_TOP } from "butter-toast";
+import ButterToast, { POS_CENTER, POS_TOP } from "butter-toast";
 
 import AdminDashboard from "./components/AdminDashboard";
 import StudentDashboard from "./components/StudentDashboard";
@@ -55,16 +55,25 @@ function App() {
           <Route path="/all_presentation" component={All_Presentation}></Route>
           <Route path="/all_Topic" component={All_Topic}></Route>
           <Route path="/all_Schedule" component={All_Schedule}></Route>
-          <Route path="/all_ResearchPaper" component={All_ResearchPaper}></Route>
+          <Route
+            path="/all_ResearchPaper"
+            component={All_ResearchPaper}
+          ></Route>
           <Route path="/all_users" component={All_Users}></Route>
           <Route path="/all_groups" component={All_Groups}></Route>
           <Route path="/student" component={StudentDashboard}></Route>
-          <Route path="/co_supervisors" component={Co_supervisorsDashboard}></Route>
+          <Route
+            path="/co_supervisors"
+            component={Co_supervisorsDashboard}
+          ></Route>
           <Route path="/examiners" component={ExaminersDashboard}></Route>
           <Route path="/supervisors" component={SupervisorsDashboard}></Route>
           <Route path="/admin" component={AdminDashboard}></Route>
           <Route path="/coordinator" component={CoordinatorDashboard}></Route>
-          <Route path="/project_member" component={ProjectMemberDashboard}></Route>
+          <Route
+            path="/project_member"
+            component={ProjectMemberDashboard}
+          ></Route>
           <Route path="/marks" component={Marks}></Route>
           <Route path="/supervisor_Marks" component={Supervisor_Marks}></Route>
           <Route path="/schedule" component={Schedule}></Route>
